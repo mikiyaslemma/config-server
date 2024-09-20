@@ -33,4 +33,4 @@ keycloak:
   realm: saas-realm
   client-id: saas-client
   client-secret: zaBWunSDuyeypDmJa4BDIGpkji9BWOTE
-  openIdConnectUrl: http://host.docker.internal:8281/realms/saas-realm/.well-known/openid-configuration
+  openIdConnectUrl: http://localhost:8281/realms/saas-realm/.well-known/openid-configuration
