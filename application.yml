@@ -7,8 +7,8 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://http://http://172.20.85.79:8281/realms/saas-realm
-          jwk-set-uri: http://http://http://172.20.85.79:8281/realms/saas-realm/protocol/openid-connect/certs
+          issuer-uri: http://http:172.20.85.79:8281/realms/saas-realm
+          jwk-set-uri: http://http:172.20.85.79:8281/realms/saas-realm/protocol/openid-connect/certs
 
 eureka:
   instance:
@@ -17,7 +17,7 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     serviceUrl:
-      defaultZone: http://http://http://172.20.85.79:8761/eureka/
+      defaultZone: http://http:172.20.85.79:8761/eureka/
 
 management:
   endpoints:
@@ -29,8 +29,8 @@ management:
       show-details: always
 
 keycloak:
-  server-url: http://http://http://172.20.85.79:8281
+  server-url: http://http:172.20.85.79:8281
   realm: saas-realm
   client-id: saas-client
   client-secret: XEZvEoVQRxYHitcrfeBJoVx5rY9mYd7U
-  openIdConnectUrl: http://http://http://172.20.85.79:8281/realms/saas-realm/.well-known/openid-configuration
+  openIdConnectUrl: http://http:172.20.85.79:8281/realms/saas-realm/.well-known/openid-configuration
