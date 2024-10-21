@@ -11,7 +11,7 @@ spring:
           jwk-set-uri: ${spring.security.oauth2.resourceserver.jwt.issuer-uri}/protocol/openid-connect/certs
 
 host:
-  ip: 172.20.85.79
+  ip: 172.20.85.83
 
 keycloak:
   server-url: http://${host.ip}:8281
